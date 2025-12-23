@@ -1,0 +1,103 @@
+ls
+  752  docker ps
+  753  ls -lrt
+  754  docker --version
+  755  sudo apt install docker.io
+  756  docker --version
+  757  sudo apt update
+  758  apt list --upgradable
+  759  sudo apt full-upgrade
+  760  sudo systemctl docker
+  761  sudo systemctl docker.io
+  762  sudo systemctl status docker
+  763  df ih
+  764  df-h
+  765  df -h
+  766  du -h
+  767  docker ps
+  768  sudo usermod -aG docker $USER
+  769  newgrp docker
+  770  git status
+  771  ls
+  772  mkdir projects
+  773  cd projects/
+  774  git clone https://github.com/LondheShubham153/simple-java-docker.git
+  775  ls
+  776  cd simple-java-docker/
+  777  ls
+  778  git status
+  779  cd projects/
+  780  ls
+  781  git clone https://github.com/LondheShubham153/java-quotes-app.git
+  782  ls
+  783  cd java-quotes-app/
+  784  ls
+  785  cat quotes.txt
+  786  cd
+  787  ls
+  788  cd projects/
+  789  ls
+  790  cd simple-java-docker/
+  791  ls
+  792  rm Dockerfile
+  793  ls
+  794  vim Dockerfile
+  795  ls
+  796  docker build -t java-app .
+  797  vim Dockerfile
+  798  docker build -t java-app .
+  799  histor
+ docker ps
+  947  docket exec -it 0eafeacb6299
+  948  docker exec -it 0eafeacb6299
+  949  docker exec -it 0eafeacb6299 bash
+  950  ls
+  951  docker images
+  952  docker ps
+  953  docker stop 8452d9177dcf
+  954  cd projects/
+  955  ls
+  956  git clone https://github.com/LondheShubham153/two-tier-flask-app.git
+  957  ls
+  958  docker build -t two-tier-flask-app .
+  959  cd two-tier-flask-app/
+  960  ls
+  961  cat Dockerfile
+  962  cd
+  963  cd projects/
+  964  ls
+  965  docker build -t two-tier-backend .
+  966  docker build -t two-tier-flask-app .
+  967  cd two-tier-flask-app/
+  968  docker build -t two-tier-flask-app .
+  969  pip install --upgrade pip
+  970  docker ps
+  971  cd
+  972  docker images
+  973  docker pull mysql
+  974  docker images
+  975  docker run -e MYSQL_ROOT_PASSWORD=root mysql
+  976  docker os
+  977  docker ps
+  978  cd projects/
+  979  docker ps
+  980  cd two-tier-flask-app/
+  981  docker ps
+  982  docker images
+  983  docker run -d -e MYSQL_ROOT_PASSWORD=root mysql
+  984  docker ps
+  985  docker exec -it 6a1a119084d5 bash
+  986  docker images
+  987  docker run -d -p 5000:5000 -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-flask-app:latest
+  988  docker ps
+  989  docker ps -a
+  990  docker os
+  991  docker ps
+  992  docker stop 6a1a119084d5
+  993  docker stop 6a1a119084d5 & docker rm 6a1a119084d5
+  994  docker ps
+  995  docker network create twotier -d bridge
+  996  docker run -d --name mysql --network twotier -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql
+  997  docker run -d -p 5000:5000 -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-flask-app:latest
+  998  docker run -d -p 5000:5000 --network twotier -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-flask-app:latest
+  999  docker ps
